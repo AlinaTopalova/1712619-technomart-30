@@ -7,52 +7,46 @@
   <body>
     <header>
       <section>
-        <ul>
-          <li>
             <a href="index.html">
               <img src="https://via.placeholder.com/150x50" alt="Логотип Техномарт">
             </a>
-          </li>
-          <li>
-            <input type="search" placeholder="Поиск">
-          </li>
-          <li>
-            <a href="#">Закладки: 0</a>
-          </li>
-          <li>
-            <a href="#">Корзина: 0</a>
-          </li>
-          <li>
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <span>иконка лупа</span>
+              <input type="search" placeholder="Поиск">
+            </form>
+            <a href="#"><span>иконка флажок</span>Закладки: 0</a>
+            <a href="#"><span>иконка корзина</span>Корзина: 10</a>
             <a href="#">Оформить заказ</a>
-          </li>
-       </ul>
       </section>
       <section>
         <h1>Интернет-магазин<br> 
             строительных материалов<br>
             и инструментов для ремонта</h1>
-      </section>
-      <section>
-        <h2>Телефон и адрес</h2>
-        <p>
-          <a href="tel:+78125550555">+7(812)555-05-55</a>
-        </p>
-        <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-      </section>
-      <section>
-        <a href="#">
-          <img src="https://via.placeholder.com/20x20" alt="Иконка пользователя">
-        </a>
-        <p>Равшан Джамшутович</p>
-        <a href="#">
-          <img src="https://via.placeholder.com/20x20" alt="Выход">
-        </a>
-        <ul>
-          <li>
-            <a href="#">Мои заказы</a>
-            <a href="#">Личный кабинет</a>
-          </li>
-        </ul>
+        <div>
+          <h2>Телефон и адрес</h2>
+          <p>
+            <a href="tel:+78125550555"><span>иконка телефона</span>+7(812)555-05-55</a>
+          </p>
+          <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+        </div>
+        <div>
+          <a href="#">
+            <span>иконка пользователя</span>
+          </a>
+          <p>Равшан Джамшутович</p>
+          <a href="#">
+            <span>иконка выход</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">Мои заказы</a>
+            </li>
+            <span>иконка круг</span>
+            <li>
+              <a href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <nav>
         <ul>
@@ -84,25 +78,28 @@
       <ul>
         <li>
           <a href="index.html">
-            <img src="https://via.placeholder.com/20x20" alt="Главная">
+            <span>Иконка Домой</span>
           </a>
         </li>
+        <span>Иконка ></span>
         <li>
-          <a href="blank.html">КАТАЛОГ</a>
+          <a href="blank.html">Каталог</a>
         </li>
+        <span>Иконка ></span>
         <li>
-          <a href="blank.html">ИНСТРУМЕНТ</a>
+          <a href="blank.html">Инструмент</a>
         </li>
+        <span>Иконка ></span>
         <li>
-          ПЕРФОРАТОРЫ
+          Перфораторы
         </li>
       </ul>
-      <h1>ПЕРФОРАТОРЫ</h1>
+      <h1>Перфораторы</h1>
       <section>
-        <h2>ФИЛЬТР:</h2>
+        <h2>Фильтр:</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>ЦЕНА:</legend>
+            <legend>Цена:</legend>
             <div>
               <div>
                   <div>range-controls <div>scale</div></div>
@@ -116,7 +113,7 @@
           </div>
           </fieldset>
           <fieldset>
-            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <legend>Производители:</legend>
             <ul>
               <li>
                 <label><input type="checkbox" name="BOSCH" checked>BOSCH 
@@ -141,14 +138,14 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>ПИТАНИЕ:</legend>
+            <legend>Питание:</legend>
             <ul>
               <li>
-                <label><input type="radio" name="product-kind" value="akkumulyator" checked>АККУМУЛЯТОРНЫЕ
+                <label><input type="radio" name="product-kind" value="akkumulyator" checked>Аккумуляторные
                 </label>
               </li> 
               <li>
-                <label><input type="radio" name="product-kind" value="network">СЕТЕВЫЕ
+                <label><input type="radio" name="product-kind" value="network">Сетевые
                 </label>
               </li> 
             </ul>
@@ -158,17 +155,17 @@
       </section> 
       <section>
         <fieldset>
-          <legend>СОРТИРОВКА:</legend>
+          <legend>Сортировка:</legend>
             <ul>
-              <li>ПО ЦЕНЕ</li>
-              <li>ПО ТИПУ</li>
-              <li>ПО ФУНКЦИОНАЛУ</li>
-              <li><img src="https://via.placeholder.com/10x10" alt="По убыванию"></li>
-              <li><img src="https://via.placeholder.com/10x10" alt="По возрастанию"></li>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+              <li><a href="#"><span>иконка по убыванию</span></a></li>
+              <li><a href="#"><span>иконка по возрастанию</span></a></li>
             </ul>
         </fieldset>
       </section>
-      <article>
+      <section>
         <h2>Список перфораторов</h2>
         <ul>
           <li>
@@ -181,8 +178,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -195,8 +192,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -209,8 +206,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -223,8 +220,8 @@
               <p>22500 Р.</p>
               <p>15500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -237,8 +234,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -250,8 +247,8 @@
             </a>
               <p>12500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -264,8 +261,8 @@
               <p>22500 Р.</p>
               <p>15500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -278,8 +275,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
           <li>
@@ -291,8 +288,8 @@
             </a>
               <p>12500 Р.</p>
             <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
+              <a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
           </li>
         </ul>
@@ -307,10 +304,10 @@
             <a href="#">3</a>
           </li>
           <li>
-            <a href="#">СЛЕДУЮЩАЯ</a>
+            <a href="#">Следующая</a>
           </li>
         </ul>
-      </article>
+      </section>
       <section>
         <h2>Пара слов о перфораторах</h2>
         <p>
@@ -368,12 +365,13 @@
         </ul>
       </section>
       <section>
+        <h3>Как с нами связаться</h3>
         <p>© 2010-2019 Компания «Техномарт»<br>
            Все права защищены</p>
         <p>
-          <a href="#"><img src="https://via.placeholder.com/20x20" alt="VK"></a>
-          <a href="#"><img src="https://via.placeholder.com/20x20" alt="facebook"></a>
-          <a href="#"><img src="https://via.placeholder.com/20x20" alt="Instagram"></a>
+          <a href="#"><span>иконка VK</span></a>
+          <a href="#"><span>иконка facebook</span></a>
+          <a href="#"><span>иконка Instagram</span></a>
         </p>
         <p>Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
