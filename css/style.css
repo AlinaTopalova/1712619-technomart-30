@@ -143,14 +143,14 @@ img {
   background-image: url("../img/top-background.png");
 }
 
-.main-header-container {
+.top-header-wrapper {
   background-color: var(--basic-extradark-blue);
 }
 
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0px
+  padding: 0px 10px;
 }
 
 
@@ -162,8 +162,15 @@ img {
   grid-template-columns: 1fr 1fr 2fr;
   width: 940px;
   height: 42px;
-  margin: 0 auto;
-  padding: 0px 10px;
+  margin-bottom: 47px;
+}
+.main-header-top {
+  background-color: var(--basic-extradark-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  width: 940px;
+  height: 42px;
+  margin-bottom: 47px;
 }
 
 .logo {
@@ -194,7 +201,6 @@ margin: 13px 57px 18px 57px;
 
 .links {
   justify-self: end;
-  margin-top: 9px;
 }
 
 .links a {
@@ -202,11 +208,15 @@ margin: 13px 57px 18px 57px;
 }
 
 .header-bookmark {
-  padding: 11px 20px;
+  padding: 10px 15px;
 }
 
 .header-cart {
-  padding: 11px 20px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  width: 136px;
+  height: 32px;
 }
 
 .header-bookmark:hover,
@@ -216,8 +226,12 @@ margin: 13px 57px 18px 57px;
 }
 
 .checkout {
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  width: 150px;
+  height: 32px;
   background-color: var(--basic-green);
-  padding: 11px 20px;
 }
 
 .checkout:hover {
@@ -236,7 +250,7 @@ margin: 13px 57px 18px 57px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
-  height: 158px;
+  margin-bottom: 40px;
 }
 
 .main-title {
@@ -244,13 +258,11 @@ margin: 13px 57px 18px 57px;
   line-height: 23px;
   font-style: italic;
   color: var(--basic-red);
-  margin-top: 40px;
-  margin-left: 43px;
+  margin-left: 30px;
 }
 
 .main-header-contacts{
   text-align: center;
-  margin-top: 29px;
 }
 
 .header-phone {
@@ -270,24 +282,20 @@ margin: 13px 57px 18px 57px;
   text-align: center;
 }
 
-.user-links {
-  background-color: var(--basic-white);
-  list-style: none;
-  max-width: 0px;
-}
-
 .user-links-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   list-style: none;
-  margin-top: 58px;
-  gap: 10px;
 }
 
 .user-links a{
   color: var(--basic-black);
   background-color: var(--basic-white);
-  padding: 14px 10px;;
+  padding: 12px 24px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.user-links a:nth-child(1) {
+  padding-left: 45px;
 }
 
 .user-links a:hover {
@@ -307,8 +315,8 @@ margin: 13px 57px 18px 57px;
   color: var(--basic-white);
   background-color: var(--basic-dark-blue);
   box-shadow: inset 0px -5px 0px #293449;
-  margin-bottom: 118px;
-  
+  padding: 0px;
+  margin-bottom: 119px;;
 }
 
 .site-navigation {
@@ -334,19 +342,17 @@ margin: 13px 57px 18px 57px;
 .offers-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 940px;
-  height: 409px;
   gap: 20px;
   list-style: none;
   margin: 0px;
-  margin-bottom: 50px;
+  padding: 0px;
+  margin-bottom: 59px;
 }
 
 .offer-slider {
   position: relative;
   grid-column: 1/span 2;
   grid-row: 2/span 2;
-  height: 100%;
 }
 
 .offer-slide img {
@@ -361,6 +367,15 @@ margin: 13px 57px 18px 57px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-white);
+  padding-left: 23px;
+  padding-top: 20px;
+  margin: 0px;
+  margin-bottom: 14px;
+}
+
+.offer-item {
+  width: 300px;
+  height: 123px;
 }
 
 .offer-item-materials {
@@ -388,9 +403,14 @@ margin: 13px 57px 18px 57px;
 }
 
 .offer-button  {
+  display: inline-block;
   color: var(--basic-white);
   background: rgba(255,255,255,0.3);
-  padding: 10px;
+  margin-left: 23px;
+  width: 135px;
+  height: 38px;
+  text-align: center;
+
 }
 
 .offer-button:hover {
@@ -409,24 +429,21 @@ margin: 13px 57px 18px 57px;
   color: var(--basic-white);
   margin-left: 20px;
   margin-top: 25px;
-  margin-bottom: 10px;
-  padding: 0px;
+  margin-bottom: 5px;
 }
 
 .slide-description {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  margin-left: 20px;
-  margin-top: 0px;
+  margin: 0px;
+  padding-left: 20px;
   margin-bottom: 113px;
-  
 }
 
 .slide-button {
   padding: 10px 20px;
   margin-left: 20px;
-  margin-bottom: 30px;
 }
 
 
@@ -436,10 +453,14 @@ margin: 13px 57px 18px 57px;
 }
 
 .pop-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 89px;
   background-color: var(--basic-dark-white2);
   margin-bottom: 20px;
 }
+
 
 .second-title {
   display: inline-block;
@@ -448,7 +469,6 @@ margin: 13px 57px 18px 57px;
   text-transform: uppercase;
   color: var(--basic-dark-blue);
   padding-left: 30px;
-  padding-top: 33px;
   margin: 0px;
 }
 
@@ -502,17 +522,26 @@ margin: 13px 57px 18px 57px;
   height: 38px;
 }
 
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*buy*/
 
 .buy {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--basic-white); 
   background-color: var(--basic-green);
   box-shadow: inset 0px -3px 0px #367315;
   border-radius: 2px;
-  padding: 10px;
+  width: 135px;
+  height: 38px;
+  margin-bottom: 10px;
 }
 
 .buy:hover {
@@ -530,11 +559,13 @@ margin: 13px 57px 18px 57px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 8px;
+  text-align: center;
   color: var(--basic-dark-blue);
   border: 3px solid var(--basic-light-green);
   box-sizing: border-box;
   border-radius: 2px;
+  width: 135px;
+  height: 38px;
 }
 
 .add-bookmark:hover {
@@ -564,11 +595,14 @@ margin: 13px 57px 18px 57px;
 .producers-list li {
   border: 1px solid #EAEAEA;
 }
+.producers-list a {
+  margin: auto;
+}
 
 
 /*service*/
 
-.service-unit {
+.service-wrapper {
   background-color: var(--basic-dark-white);
 }
 
@@ -626,6 +660,8 @@ margin: 13px 57px 18px 57px;
   border: none;
   width: 240px;
   height: 61px;
+  padding: 20px;
+  text-align: left;
 }
 
 .service-button:hover {
@@ -658,8 +694,8 @@ margin: 13px 57px 18px 57px;
 /*about company*/
 
 .company-info {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 70px;
 }
 
@@ -667,11 +703,22 @@ margin: 13px 57px 18px 57px;
   color: var(--basic-black);
   padding-top: 74px;
   padding-left: 0px;
+  margin-bottom: 24px;
+}
+
+.company-description {
+  margin-bottom: 35px;
 }
 
 .partners-list {
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.about-company-button {
+  padding: 11px 40px 9px 40px;
 }
 
 
@@ -679,8 +726,24 @@ margin: 13px 57px 18px 57px;
 
 .contacts-title {
   color: var(--basic-black);
-  padding-top: 70px;
+  padding-top: 74px;
   padding-left: 0px;
+  margin-bottom: 24px;
+}
+
+.contacts-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map {
+  margin-bottom: 24px;
+}
+
+.contacts-map-button {
+  text-align: center;
+  padding-right: 0px;
 }
 
 
@@ -691,7 +754,7 @@ margin: 13px 57px 18px 57px;
   grid-template-columns: 360px 1fr;
 }
 
-.footer-top-back {
+.footer-top-wrapper {
   background-color: var(--basic-dark-blue);
 }
 
@@ -754,64 +817,56 @@ margin: 13px 57px 18px 57px;
 
 /*footer-info*/
 
-.footer-info {
+.footer-bottom-wrapper {
   background-color: var(--basic-extradark-blue);
-  color: var(--basic-white);
-  font-size: 16px;
-  line-height: 18px;
 }
 
 .footer-bottom {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
-.footer-info a {
+.footer-bottom a {
   color: var(--basic-light-yellow);
 }
 
-.footer-info a:hover {
+.footer-bottom a:hover {
   text-decoration: underline;
 }
 
-.footer-info a:focus {
+.footer-bottom a:focus {
   color: var(--basic-dark-red);
 }
 
-.copyright {
-  padding-top: 35px;
-}
-
 .social {
-  padding-top: 35px;
-  width: 200px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
 }
 
 .vk {
   background-image: url("../img/social/vk.svg");
   background-repeat: no-repeat;
-  width: 44px;
-  height: 44px;
 }
 
 .facebook {
   background-image: url("../img/social/facebook.svg");
   background-repeat: no-repeat;
-  width: 44px;
-  height: 44px;
 }
 
 .instagram {
   background-image: url("../img/social/instagram.svg");
   background-repeat: no-repeat;
-  width: 44px;
-  height: 44px;
 }
+
  .developers {
   margin: 0px;
   padding: 0px;
-
 }
 
 
