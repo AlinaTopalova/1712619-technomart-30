@@ -12,46 +12,50 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="top-header-wrapper">
-      <section class="main-header-top container">
-        <div class="logo">
-          <a class="main-header-logo" href="#">
-            <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
-          </a>
-        </div>
+      <div class="main-header-top-wrapper">
+        <section class="main-header-top container">
+          <div class="header-logo">
+            <a href="#">
+              <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+            </a>
+          </div>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
             <input type="search" placeholder= "Поиск:">
           </form>
-          <div class="links">
-            <a class="header-bookmark" href="#">Закладки: 0</a>
-            <a class="header-cart" href="#">Корзина: 0</a>
+          <div class="header-links">
+            <a class="header-link header-link-bookmark" href="#">
+              <span class="header-link-icon"></span>Закладки: 0
+            </a>
+            <a class="header-link header-link-cart" href="#">
+              <span class="header-link-icon"></span>Корзина: 0
+            </a>
             <a class="checkout" href="#">Оформить заказ</a>
           </div>
-      </section>
-        </div>
+        </section>
+      </div>
       <section class="main-header-info container">
         <h1 class="main-title">Интернет-магазин<br> 
             строительных материалов<br>
-            и инструментов для ремонта</h1>
+            и инструментов для ремонта
+        </h1>
         <div class="main-header-contacts">
           <h2 hidden>Телефон и адрес</h2>
-          <p>
-            <a class="header-phone" href="tel:+78125550555">+7(812)555-05-55</a>
+          <p class="header-phone"><a href="tel:+78125550555">
+            +7 (812) 555-05-55</a>
           </p>
-          <p class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
         </div>
-        <div class="user-links">
-          <ul class="user-links-list">
-            <li>
+        <ul class="user-links-list">
+            <li class="user-links-item">
               <a class="login-link" href="#">Войти</a>
             </li>
-            <li>
+            <li class="user-links-item">
               <a class="sign-up-link" href="#">Регистрация</a>
             </li>
-          </ul>
-        </div>
+        </ul>
       </section>
-      <nav class="main-navigation container">
+      <nav class="container">
         <ul class="site-navigation">
           <li>
             <a>Главная</a>
@@ -186,7 +190,7 @@
       <section class="pop-producers container">
         <div class="pop-section">
           <h2 class="second-title">Популярные производители:</h2>
-          <a class="pop-section-button button" href="#">Все производители</a>
+          <a class="pop-producers-button button" href="#">Все производители</a>
         </div>
         <ul class="producers-list">
           <li>
@@ -231,14 +235,14 @@
           </li>
         </ul>
       </section>
-      <div class="service-wrapper">
-      <section class="container">
+      <div class="service-info-wrapper">
+      <section class="service-info container">
             <h2 class="main-service-title">Сервисы</h2>
-            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            <p class="main-service-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           <div class="service">
-          <ul class="service-buttons">
+          <ul class="service-buttons-list">
             <li>
               <button type="button" class="service-button" disabled>Доставка</button>
             </li>
@@ -250,14 +254,14 @@
             </li>
           </ul>
           <ul class="service-list">
-            <li class="service-item" hidden>
+            <li class="service-item">
               <h2 class="service-title">Доставка</h2>
               <p class="description">Мы с удовольствием доставим ваш товар прямо<br>
                к вашему подъезду совершенно бесплатно!<br>
                Ведь мы неплохо заработаем,<br>
                поднимая его на ваш этаж!<br>
             </li>
-            <li class="service-item" >
+            <li class="service-item" hidden>
               <h2 class="service-title">Гарантия</h2>
               <p class="description">Если купленный у нас товар поломается или заискрит,<br>
                а также в случае пожара, спровоцированного его<br>
@@ -277,7 +281,7 @@
     </div>
     <div class="company-info container">
       <section class="about-company">
-        <h2 class="second-title company-title">Компания "ТЕХНОМАРТ"</h2>
+        <h2 class="second-title company-title">Компания «Техномарт»</h2>
         <p class="company-description description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
            ремонта и строительства не оставит равнодушным любителей сэкономить на<br>
            гастарбайтерах.</p>
@@ -292,7 +296,7 @@
       </section>
       <section class="contacts">
         <h2 class="second-title contacts-title">Контакты</h2>
-        <p class="description">Вы можете забрать товар сами,<br>
+        <p class="contacts-description description">Вы можете забрать товар сами,<br>
             заехав в наш офис:
         </p>
         <div class="contacts-map">
@@ -309,11 +313,11 @@
       <div class="footer-top container">
         <section class="footer-contacts">
           <h2 hidden>Адрес и телефон</h2>
-            <div class="logo">
-              <a class="footer-logo"><img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
+            <div class="footer-logo">
+              <a href="#"><img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
             </div>
-              <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-               +7(812)555-05-55</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+               +7 (812) 555-05-55</p>
         </section>
         <nav class="footer-navigation">
           <h2 hidden>Навигация по сайту</h2>
