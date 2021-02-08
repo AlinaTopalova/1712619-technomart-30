@@ -925,13 +925,13 @@ img {
 }
 
 .footer-bottom {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 34px;
 }
 
 .footer-bottom a {
@@ -948,13 +948,13 @@ img {
 
 .social {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   font-size: 0px;
 }
+
 .social a {
-  padding: 15px 15px;
-  margin-right: 19px;
+  padding: 20px 20px;
 }
 
 .vk {
@@ -971,6 +971,8 @@ img {
   background-image: url("../img/social/instagram.svg");
   background-repeat: no-repeat;
 }
+
+
 
  .developers {
   margin: 0px;
