@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,19 +12,23 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-header-container">
-        <section class="main-header-top">
-          <div class="logo">
-            <a class="main-header-logo" href="#">
-            <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+      <div class="main-header-top-wrapper">
+        <section class="main-header-top container">
+          <div class="header-logo">
+            <a href="#">
+              <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
             </a>
           </div>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-            <input type="search" placeholder= "Поиск:">
+            <input type="text" placeholder= "Поиск:">
           </form>
-          <div class="links">
-            <a class="header-bookmark" href="#">Закладки: 0</a>
-            <a class="header-cart" href="#">Корзина: 0</a>
+          <div class="header-links">
+            <a class="header-link header-link-bookmark" href="#">
+              <span class="header-link-icon"></span>Закладки: 0
+            </a>
+            <a class="header-link header-link-cart" href="#">
+              <span class="header-link-icon"></span>Корзина: 10
+            </a>
             <a class="checkout" href="#">Оформить заказ</a>
           </div>
         </section>
@@ -32,13 +36,14 @@
       <section class="main-header-info container">
         <h1 class="main-title">Интернет-магазин<br> 
             строительных материалов<br>
-            и инструментов для ремонта</h1>
-        <div class="main-header-contacts">
+            и инструментов для ремонта
+        </h1>
+        <div class="main-header-contacts-second">
           <h2 hidden>Телефон и адрес</h2>
-          <p>
-            <a class="header-phone" href="tel:+78125550555">+7(812)555-05-55</a>
+          <p class="header-phone"><a href="tel:+78125550555">
+            +7 (812) 555-05-55</a>
           </p>
-          <p class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
         <div class="user-profile">
@@ -46,16 +51,16 @@
           <a class="user-name" href="#">Равшан Джамшутович</a>
           <a href="#"></a>
           <ul class="user-btn-list">
-            <li>
+            <li class="user-btn-item">
               <a href="#">Мои заказы</a>
             </li>
-            <li>
+            <li class="user-btn-item">
               <a href="#">Личный кабинет</a>
             </li>
           </ul>
         </div>
       </section>
-      <nav class="main-navigation container">
+      <nav class="container">
         <ul class="site-navigation">
           <li>
             <a href="index.html">Главная</a>
@@ -82,34 +87,34 @@
       </nav>
     </header>
     <main>
-      <ul class="breadcrumbs container">
-        <li>
-          <a href="index.html">На главную</a>
-        </li>
-        <li>
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li>
-          <a href="blank.html">Инструмент</a>
-        </li>
-        <li>
-          <a>Перфораторы</a>
-        </li>
-      </ul>
-      <div class="catalog-title container">
-        <h2 class="second-title">Перфораторы</h2>
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li>
+            <span><a href="index.html">Н</a></span>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="blank.html">Инструмент</a>
+          </li>
+          <li>
+            <a>Перфораторы</a>
+          </li>
+        </ul>
       </div>
-      <div class="tech-catalog container">
+      <div class="catalog container">
+        <h2 class="catalog-title second-title">Перфораторы</h2>
         <section class="filters">
           <h3 class="filters-title">Фильтр:</h3>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
-              <legend>Цена:</legend>
+              <legend class="legend-price">Цена:</legend>
               <div>
                 <div class="scale-price">
-                  <div>range-controls <div>scale</div></div>
-                  <div>toogle min-price</div>
-                  <div>toogle max-price</div>
+                  <div>range-controls<div hidden>scale</div></div>
+                  <div hidden>toogle min-price</div>
+                  <div hidden>toogle max-price</div>
                 </div>
                 <div class="price-input">
                   <input class="min-price-input" type="text" name="min-price" value="0">
@@ -118,27 +123,26 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend>Производители:</legend>
-              <ul>
-                <li class="filter-option filter-checkbox">
+              <legend class="producers-legend">Производители:</legend>
+              <ul class="producers-filter-list">
+                <li class="filter-checkbox">
                 <label><input class="filter-input-checkbox filter-input" type="checkbox" 
                   name="BOSCH" checked>BOSCH </label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-checkbox">
                 <label><input class="filter-input-checkbox filter-input" type="checkbox" 
-                  name="ИНТЕРСКОЛ">ИНТЕРСКОЛ 
+                  name="ИНТЕРСКОЛ">ИНТЕРСКОЛ </label>
+                </li>
+                <li class="filter-checkbox">
+                <label><input class="filter-input-checkbox filter-input" type="checkbox" name="MAKITA" checked>MAKITA 
                 </label>
                 </li>
-                <li>
-                <label><input type="checkbox" name="MAKITA" checked>MAKITA 
-                </label>
-                </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-checkbox">
                 <label><input class="filter-input-checkbox filter-input" type="checkbox" 
                   name="DEWALT">DEWALT 
                 </label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-checkbox">
                 <label><input class="filter-input-checkbox filter-input" type="checkbox" 
                   name="HITACHI">HITACHI 
                 </label>
@@ -146,7 +150,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Питание:</legend>
+              <legend class="power-legend">Питание:</legend>
               <ul>
                 <li class="filter-option filter-radio">
                 <label><input class="filter-input-radio filter-input" type="radio" 
@@ -164,16 +168,14 @@
           </form>
         </section> 
         <section class="sort">
-          <fieldset>
-          <legend>Сортировка:</legend>
+          <span class="sort-title">Сортировка:</span>
             <ul class="sort-option">
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
-              <li><a href="#"><span>Сортировать по возрастанию</span></a></li>
-              <li><a href="#"><span>Сортировать по убыванию</span></a></li>
+              <li><a href="#"><span>^</span></a></li>
+              <li><a href="#"><span>^</span></a></li>
             </ul>
-          </fieldset>
         </section>
         <h2 hidden>Список перфораторов</h2>
         <section class="products">
@@ -312,7 +314,7 @@
         </section>
       </div>
       <div class="tech-description-back">
-        <section class="container">
+        <section class="tech-description container">
           <h2 class="tech-title">Пара слов о перфораторах</h2>
           <p class="description">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и 
@@ -326,15 +328,15 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-top-back">
+      <div class="footer-top-wrapper">
       <div class="footer-top container">
         <section class="footer-contacts">
           <h2 hidden>Адрес и телефон</h2>
-            <div class="logo">
-              <a class="footer-logo"><img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
+            <div class="footer-logo">
+              <a href="#"><img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
             </div>
-              <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-               +7(812)555-05-55</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+               +7 (812) 555-05-55</p>
         </section>
         <nav class="footer-navigation">
           <h2 hidden>Навигация по сайту</h2>
@@ -375,15 +377,15 @@
         </section>
       </div>
       </div>
-      <section class="footer-info">
+      <section class="footer-bottom-wrapper">
         <div class="footer-bottom container">
         <h3 hidden>Как с нами связаться</h3>
         <div class="copyright">© 2010-2019 Компания «Техномарт»<br>
            Все права защищены</div>
         <div class="social">
-          <a class ="vk" href="#">fhfhfhh</a>
-          <a class ="facebook" href="#">fhfhfh</a>
-          <a class ="instagram" href="#">fhfhfh</a>
+          <a class ="vk" href="#">vkontakte</a>
+          <a class ="facebook" href="#">facebook</a>
+          <a class ="instagram" href="#">instagram</a>
         </div>
         <div class="feedback">
           Обратная связь:<br>
@@ -396,5 +398,13 @@
       </div>
       </section>
     </footer>
+    <section class="modal modal-cart" hidden>
+      <p>Товар добавлен в корзину!</p>
+      <ul class="modal-cart-actions">
+        <li><a href="#">Оформить заказ</a></li>
+        <li><a href="#">Продолжить покупки</a></li>
+      </ul>
+      <button class="modal-message-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

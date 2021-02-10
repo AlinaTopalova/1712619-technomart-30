@@ -264,7 +264,11 @@ img {
   margin-right: 93px;
 }
 
-.main-header-contacts p {
+.header-phone {
+  margin: 0px;
+}
+
+.header-address {
   margin: 0px;
 }
 
@@ -525,7 +529,8 @@ img {
 
 .product-image {
   margin: 0px;
-  min-height: 164px;
+  width: 184px;
+  height: 164px;
 }
 
 .product-card-title {
@@ -984,26 +989,38 @@ img {
 
 /*user-profile*/
 
-.user-profile {
-  margin-top: 58px;
+.main-header-contacts-second {
+  margin-right: 49px;
 }
 
+
 .user-name {
+  display: block;
   font-size: 21px;
   line-height: 21px;
-  background-color: var(--basic-white);
+  font-weight: 400;
   color: var(--basic-black);
-  padding: 14px 55px;
+  background-color: var(--basic-white);
+  padding: 12px 57px 12px 56px;
+  margin-bottom: 7px;
 }
 
 .user-btn-list {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .user-btn-list a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-dark-blue);
+}
+
+.user-btn-list li:not(:nth-last-child(1)) {
+  margin-right: 30px;
 }
 
 .user-name:focus {
@@ -1018,20 +1035,33 @@ img {
   color: var(--basic-light-grey1);
 }
 
-.breadcrumbs {
+.breadcrumbs-list {
+  display: flex;
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 10px;
 }
 
-.breadcrumbs a {
-  list-style: none;
+.breadcrumbs-list li {
+  margin-right: 40px;
+}
+
+.breadcrumbs-list a {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-/*catalog-title*/
-.tech-catalog {
+
+/*catalog*/
+
+.catalog {
   display: grid;
   grid-template-columns: 220px 1fr;
   align-content: start;
@@ -1039,15 +1069,18 @@ img {
 }
 
 .catalog-title {
-  width: 940px;
-  height: 89px;
   background-color: var(--basic-light-blue2);
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 29px;
 }
 
+
 /*filters*/
+
 .filters {
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 2/4;
 }
 
 .filters-title {
@@ -1057,6 +1090,15 @@ img {
   background-color: var(--basic-light-red);
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0px;
+  padding: 10px 151px 10px 18px;
+  margin-bottom: 14px;
+}
+
+.filters fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .filter legend {
@@ -1067,29 +1109,48 @@ img {
   text-transform: uppercase;
 }
 
+.legend-price {
+  margin-bottom: 10px;
+}
+
 .scale-price {
   background-color: var(--basic-light-red);
-  width: 180px;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 9px;
+}
+
+.price-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+  
 }
 
 .min-price-input {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
-  width: 84px;
+  width: 95px;
+  height: 38px;
   background-color: var(--basic-light-red);
-  margin-top: 10px;
   border: none;
+  text-align: center;
 }
 
 .max-price-input {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
-  width: 84px;
+  width: 95px;
+  height: 38px;
   background-color: var(--basic-light-red);
-  margin-top: 10px;
   border: none;
+  text-align: center;
+}
+
+.producers-legend {
+  margin-bottom: 17px;
 }
 
 .filter ul {
@@ -1098,8 +1159,43 @@ img {
   padding: 0px;
 }
 
+.filter-input {
+  margin-right: 20px;
+}
+
+.producers-filter-list label {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.producers-filter-list li:nth-last-child(1) {
+  margin-bottom: 46px;
+}
+
+.producers-filter:nth-last-child(1) {
+  margin-bottom: 45px;
+}
+
+.filter-input-radio:first-child {
+  margin-bottom: 22px;
+}
+
+.filter-checkbox {
+  margin-bottom: 20px;
+}
+
 .filter-input-checkbox {
   color: var(--basic-light-grey1);
+}
+
+.power-legend {
+  margin-bottom: 23px;
+}
+
+.filter-radio {
+  text-transform: uppercase;
 }
 
 .filters-button {
@@ -1114,18 +1210,20 @@ img {
   text-transform: uppercase;
 }
 
-.filter-radio {
-  text-transform: uppercase;
-}
 
 /*sort*/
 
 .sort {
   background-color: var(--basic-light-red);
+  grid-row: 2/3;
   grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 14px 9px 20px;
 }
 
-.sort legend {
+.sort-title {
+  display: block;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
@@ -1133,19 +1231,32 @@ img {
 }
 
 .sort-option {
+  display: flex;
   list-style: none;
-  padding: 0px;
   margin: 0px;
+  padding: 0;
+}
+
+.sort-option li:not(:nth-last-child(-n+2)) {
+  margin-right: 65px;
 }
 
 .sort-option a {
+  display: inline-block;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-light-grey3);
   text-decoration: underline dashed var(--basic-red);
 }
+
+
+.sort-option li:nth-last-child(2) {
+  margin-right: 21px;
+}
+
 
 .sort-option a:hover {
   color: var(--basic-black); 
@@ -1160,7 +1271,7 @@ img {
 
 .products {
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }
 
 .catalog-products-list {
@@ -1168,23 +1279,49 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 55px;
 }
 
 /*pagination*/
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 55px;
+}
+
+.pagination-list li {
+  margin-right: 10px;
 }
 
 .pagination-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  color: var(--basic-black);
+  width: 38px;
+  height: 38px;
   border: 1px solid #E5E5E5;
   border-radius: 2px;
-  padding: 2px 5px;
-  color: var(--basic-black);
+  text-align: center;
+  vertical-align: center;
+}
+
+.pagination-list li:last-child a {
+  width: 158px;
+  height: 38px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  text-align: center;
 }
 
 .pagination-item a:hover {
@@ -1205,12 +1342,18 @@ img {
   background-color: var(--basic-dark-white);
 }
 
+.tech-description {
+  padding-top: 64px;
+  padding-bottom: 75px;
+}
+
 .tech-title {
   font-family: "Cuprum";
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 65px;
+  margin: 0px;
+  margin-bottom: 25px;
 }
 
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
@@ -20,7 +20,7 @@
             </a>
           </div>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-            <input type="search" placeholder= "Поиск:">
+            <input type="text" placeholder= "Поиск:">
           </form>
           <div class="header-links">
             <a class="header-link header-link-bookmark" href="#">
@@ -269,7 +269,7 @@
                гарантии. Мы обменяем сгоревший товар на новый.<br>
                Дом уж восстановите как-нибудь сами.<br>
             </li>
-            <li li class="service-item" hidden>
+            <li class="service-item" hidden>
               <h2 class="service-title">Кредит</h2>
               <p class="description">Залезть в долговую яму стало проще!<br>
                Кредитные консультанты придут вам на помощь.<br></p>
@@ -379,5 +379,30 @@
       </div>
       </section>
     </footer>
+
+    <section class="modal modal-message" hidden>
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>Ваше имя:
+          <input class="message-user-name" type="text" name="user-name" 
+          placeholder="Имя Фамилия"> 
+          </label>
+        </p>
+        <p> 
+          <label>Ваш e-mail:
+          <input class="message-user-email" type="email" name="user-email" 
+            placeholder="email@example.com"> 
+          </label>
+        </p> 
+        <p>
+          <label>Текст письма:
+          <input class="message-text" type="text" name="message-text" 
+            placeholder="В свободной форме"> 
+          </label>
+        </p>
+        <button class="message-form-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-message-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
