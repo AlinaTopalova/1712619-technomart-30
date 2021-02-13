@@ -100,6 +100,8 @@
                   <a href="catalog.html" class="slide-button button">Открыть каталог</a>
                 </div>
               </div>
+              <button class="left-button"></button>
+              <button class="right-button"></button>
           </li>
         </ul>
       </section>
@@ -109,7 +111,7 @@
           <a class="pop-products-button button" href="#">Все популярные товары</a>
         </div>
         <ul class="products-list">
-          <li class="product-item product-item-new">
+          <li class="product-item">
             <a href="#">
               <p class="product-image">
                 <img src="img/products/product-1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
@@ -151,7 +153,7 @@
               <a class="add-bookmark" href="#">В закладки</a>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item product-item-new">
             <a href="#">
               <p class="product-image">
                 <img src="img/products/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -235,7 +237,7 @@
           <p class="company-description description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
               ремонта и строительства не оставит равнодушным любителей сэкономить на<br>
               гастарбайтерах.</p>
-          <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="partners-list-description description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               Техномарт работает со многими транспортными компаниями:</p>
           <ul class="partners-list">
             <li>Деловые линии</li>
@@ -299,17 +301,19 @@
             <a class ="facebook" href="#">facebook</a>
             <a class ="instagram" href="#">instagram</a>
           </div>
-          <div class="feedback">Обратная связь:<br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="developers">Разработано -<br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <div class="feedback">
+            <p>Обратная связь:<br>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>Разработано -<br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
           </div>
         </div>
       </section>
     </footer>
 
-    <section class="modal modal-message">
+    <section class="modal modal-message" hidden>
       <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="user-data">
           <label>Ваше имя:
@@ -331,7 +335,7 @@
           <button class="message-form-button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal-message-close" type="button">Закрыть</button>
+      <button class="modal-close-button" type="button">x</button>
     </section>
   </body>
 </html>
