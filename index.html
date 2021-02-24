@@ -65,7 +65,7 @@
             <h3 class="offer-title">Материалы</h3>
             <a class="offer-button" href="#">На любой вкус</a>
           </li>
-          <li class="offer-item offer-item-tool offer-item-new">
+          <li class="offer-item offer-item-tool">
             <h3 class="offer-title">Инструмент</h3>
             <a class="offer-button" href="#">На все случаи</a>
           </li>
@@ -73,7 +73,7 @@
             <h3 class="offer-title">Техника</h3>
             <a class="offer-button" href="#">Для стройки</a>
           </li>
-          <li class="offer-item offer-item-discounts offer-item-new">
+          <li class="offer-item offer-item-discounts">
             <h3 class="offer-title">Скидки 50%</h3>
             <a class="offer-button" href="#">На 350 товаров</a>
           </li>
@@ -82,7 +82,7 @@
             <a class="offer-button" href="#">Бесплатно</a>
           </li>
           <li class="offer-slider">
-              <div class="offer-slide">
+              <div class="offer-slide offer-slide-show">
                 <img src="img/slide_1.jpg" width="620" height="266" alt="Рабочий с перфоратором">
                 <div class="slide-content">
                   <h3 class="slide-title">Перфораторы</h3>
@@ -108,7 +108,7 @@
           <h2 class="second-title">Популярные товары:</h2>
           <a class="pop-products-button button" href="#">Все популярные товары</a>
         </div>
-        <ul class="products-list">
+        <ul class="pop-products-list products-list">
           <li class="product-item">
             <a href="#">
               <p class="product-image">
@@ -204,14 +204,14 @@
               <li><button type="button" class="service-button">Кредит</button></li>
             </ul>
             <ul class="service-list">
-              <li class="service-item">
+              <li class="service-item service-item-delivery service-item-show">
                 <h2 class="service-title service-title-delivery">Доставка</h2>
                 <p class="description">Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!<br>
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!<br>
               </li>
-              <li class="service-item" hidden>
+              <li class="service-item service-item-guarantee">
                 <h2 class="service-title service-title-guarantee">Гарантия</h2>
                 <p class="description">Если купленный у нас товар поломается или заискрит,<br>
                     а также в случае пожара, спровоцированного его<br>
@@ -219,7 +219,7 @@
                     гарантии. Мы обменяем сгоревший товар на новый.<br>
                     Дом уж восстановите как-нибудь сами.<br>
               </li>
-              <li class="service-item service-item-credit" hidden>
+              <li class="service-item service-item-credit">
                 <h2 class="service-title service-title-credit">Кредит</h2>
                 <p class="description description-credit">Залезть в долговую яму стало проще!<br>
                     Кредитные консультанты придут вам на помощь.<br></p>
@@ -292,7 +292,7 @@
       <section class="footer-bottom-wrapper">
         <div class="footer-bottom container">
           <h3 hidden>Как с нами связаться</h3>
-          <p class="copyright">© 2010-2019 Компания «Техномарт»<br>
+          <p class="copyright">© 2010–2019 Компания «Техномарт»<br>
            Все права защищены</p>
           <div class="social">
             <a class ="vk" href="#">vkontakte</a>
@@ -335,11 +335,23 @@
       </form>
       <button class="modal-close-button" type="button">Закрыть</button>
     </section>
-    <section class="modal modal-map" hidden>
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613504576102!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <button class="modal-close-button" type="button">Закрыть</button>
     </section>
+    <section class="modal modal-cart">
+      <p>Товар добавлен в корзину!</p>
+      <ul class="modal-cart-actions-list">
+        <li class="modal-cart-actions-item modal-cart-checkout"><a href="#">Оформить заказ</a></li>
+        <li class="modal-cart-actions-item modal-cart-continue"><a href="#">Продолжить покупки</a></li>
+      </ul>
+      <button class="modal-close-button" type="button">Закрыть</button>
+    </section>
     <script src="popupMessage.js"></script>
+    <script src="popupMap.js"></script>
+    <script src="popupCart.js"></script>
+    <script src="catalogSlider.js"></script>
+    <script src="serviceSlider.js"></script>
   </body>
 </html>
