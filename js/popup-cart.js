@@ -6,11 +6,9 @@ const cartPopup = document.querySelector(".modal-cart");
 const cartClose = cartPopup.querySelector(".modal-close-button");
 
 cartLinks.addEventListener("click", function (evt) {
-  console.log(evt.target);
   if (evt.target.classList.contains("buy")) {
   evt.preventDefault();
   cartPopup.classList.add("modal-cart-show");
-  console.log("клик");
   }
 });
 
