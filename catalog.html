@@ -18,7 +18,8 @@
               <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарт">
             </a>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-            <input type="text" placeholder= "Поиск:">
+            <input type="text" id="search-input" placeholder= "Поиск:">
+            <label for="search-input">Поиск</label>
           </form>
           <div class="header-links">
             <a class="header-link header-link-bookmark" href="#">
@@ -92,8 +93,10 @@
                   <div class="toggle toggle-max" tabindex="0" style="left: 73%" aria-label="Установить максимальную цену"></div>
                 </div>
                 <div class="price-input">
-                  <input class="min-price-input" type="text" name="min-price" value="0">
-                  <input class="max-price-input" type="text" name="max-price" value="30000">
+                  <input class="min-price-input" type="text" name="min-price" id="set-min-price"value="0">
+                  <label for="set-min-price">Ввести минимальную цену</label>
+                  <input class="max-price-input" type="text" name="max-price" id="set-max-price" value="30000">
+                  <label for="set-max-price">Ввести максимальную цену</label>
                 </div>
               </div>
             </fieldset>
@@ -160,7 +163,7 @@
             <li class="product-item">
               <a href="#">
                 <p class="product-image">
-                  <img src="img/products/product-3.jpg" width="144" height="128" alt="">
+                  <img src="img/products/product-3.jpg" width="144" height="128" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
@@ -174,7 +177,7 @@
             <li class="product-item">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-3.jpg" width="144" height="128" alt="">
+                  <img src="img/products/product-3.jpg" width="144" height="128" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
@@ -188,7 +191,7 @@
             <li class="product-item product-item-new">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-3.jpg" width="144" height="128" alt="">
+                  <img src="img/products/product-3.jpg" width="144" height="128" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
@@ -202,7 +205,7 @@
             <li class="product-item product-item-new">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-2.jpg" width="127" height="112" alt="">
+                  <img src="img/products/product-2.jpg" width="127" height="112" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 3000</h3>
               </a>
@@ -216,7 +219,7 @@
             <li class="product-item">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-3.jpg" width="144" height="128" alt="">
+                  <img src="img/products/product-3.jpg" width="144" height="128" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
@@ -230,7 +233,7 @@
             <li class="product-item product-item-new">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-2.jpg" width="127" height="112" alt="">
+                  <img src="img/products/product-2.jpg" width="127" height="112" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 2000</h3>
               </a>
@@ -243,7 +246,7 @@
             <li class="product-item product-item-new">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-2.jpg" width="127" height="112" alt="">
+                  <img src="img/products/product-2.jpg" width="127" height="112" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 3000</h3>
               </a>
@@ -257,7 +260,7 @@
             <li class="product-item">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-3.jpg" width="144" height="128" alt="">
+                  <img src="img/products/product-3.jpg" width="144" height="128" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 6000</h3>
               </a>
@@ -271,7 +274,7 @@
             <li class="product-item product-item-new">
               <a class="prodact-card" href="#">
                 <p class="product-image">
-                  <img src="img/products/product-2.jpg" width="127" height="112" alt="">
+                  <img src="img/products/product-2.jpg" width="127" height="112" alt="Изображение с перфоратором">
                 </p>
                 <h3 class="product-card-title">Перфоратор BOSCH<br> BFG 2000</h3>
               </a>
@@ -364,6 +367,6 @@
       </ul>
       <button class="modal-close-button" type="button">Закрыть</button>
     </section>
-    <script src="/js/popup-cart.min.js"></script>
+    <script src="js/popup-cart.min.js"></script>
   </body>
 </html>
